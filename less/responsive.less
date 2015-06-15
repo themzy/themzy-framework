@@ -1,0 +1,66 @@
+//
+// Responsive and tweeking
+// --------------------------------------------------
+
+//== Orientation
+//
+//## Default orientation handling
+
+@media (orientation:landscape) {
+    //CSS here
+}
+
+@media (orientation:portrait) {
+    //CSS here
+}
+
+//== iBooks Platform Queries (based on Sanders Kleinfeld's work)
+//
+//##
+
+//** iBooks Desktop "device" pixel dimensions (tested on MacBook Retina)
+@media (min-device-width:1440px) and (max-device-width:2147483646px) {
+    //CSS here
+}
+
+//** Standard iPad device pixel dimensions
+@media (min-device-width:768px) and (max-device-width:1024px) {
+    //CSS here
+}
+
+/*  Standard iPad device pixel dimensions + two-up landscaped viewport 
+(in landscape view for iPad, each page is a separate viewport which is
+less than 480 px) */
+@media (min-device-width:768px) and (max-device-width:1024px) and (max-width: 480px) {
+    //CSS here
+}
+
+//** Should work on iPhone 5s and below/
+@media (max-device-width:480px) {
+    //CSS here
+}
+
+
+//== Experimental
+//
+//##
+
+//** This styling will only be applied to MOBI 7 platforms
+@media amzn-mobi {
+    //CSS here
+}
+
+//** Styling for everything that _is not_ a MOBI 7 platform
+@media not amzn-mobi {
+    //CSS here
+}
+
+//**  This is targeted at monochrome devices only. Works only on
+@media (monochrome) {
+    //CSS here
+}
+
+//** This CSS is targeted at color devices only
+@media (color) {
+    //CSS here
+}
